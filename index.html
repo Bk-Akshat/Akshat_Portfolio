@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Akshat Anand Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshat Anand | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Akshat Anand</h1>
-    <img src="Profile_Picture.jpg" alt="Akshat's Photo" class="profile-pic">
-    
-    <h2>Resume</h2>
-    <a href="Resume_Akshat.pdf" download>
-      <button>Download Resume</button>
-    </a>
+  <header>
+    <nav>
+      <h1>Akshat Anand</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Power BI Project</h3>
-      <a href="Project_Power_BI.pdf" target="_blank">View Project PDF</a>
+  <section id="about">
+    <img src="Profile_Picture.jpg" alt="Akshat Anand" class="profile-img"/>
+    <h2>Hello! I'm Akshat</h2>
+    <p>A tech enthusiast with skills in SQL, Python, Java, Power BI and MERN stack. I love building web apps and data dashboards.</p>
+  </section>
+
+  <section id="resume">
+    <h2>📄 Resume</h2>
+    <a href="Resume_Akshat.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <section id="projects">
+    <h2>💻 Projects</h2>
+    <div class="project-card">
+      <h3>Power BI Dashboard</h3>
+      <a href="Project_Power_BI.pdf" target="_blank" class="btn">View PDF</a>
     </div>
 
-    <div class="project">
+    <div class="project-card">
       <h3>Excel Dashboard</h3>
-      <img src="Project_MS_Excel_Dashboard.jpg" alt="Excel Dashboard" class="project-img">
+      <img src="Project_MS_Excel_Dashboard.jpg" alt="Excel Project" />
     </div>
 
-    <div class="project">
-      <h3>Movie Review App (MERN Stack)</h3>
-      <a href="https://github.com/Bk-Akshat" target="_blank">View on GitHub</a>
+    <div class="project-card">
+      <h3>Movie Review App</h3>
+      <p>MERN Stack Web App</p>
+      <a href="https://github.com/Bk-Akshat" target="_blank" class="btn">GitHub</a>
     </div>
+  </section>
 
-    <h2>Certificates</h2>
+  <section id="certificates">
+    <h2>🏅 Certificates</h2>
     <ul>
-      <li><a href="Certificate_Infosys_JAVA.pdf" download>Java Programming - Infosys</a></li>
+      <li><a href="Certificate_Infosys_JAVA.pdf" download>Java - Infosys</a></li>
       <li><a href="Certificate_Internship_full_stack.pdf" download>Full Stack Internship</a></li>
     </ul>
-  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Akshat Anand</p>
+  </footer>
 </body>
 </html>
